@@ -1,8 +1,17 @@
 [project]
 name = "init-ai"
-version = "0.1.0"
+version = "0.2.0"
 description = "AI Engineer Bootstrap CLI"
 readme = "README.md"
 requires-python = ">=3.14"
-creater = "Kunal Pandit"
-dependencies = []
+creator = "Kunal Pandit"
+dependencies = [
+    "typer>=0.27.0"
+]
+
+[project.scripts]
+init-ai = "init_ai.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

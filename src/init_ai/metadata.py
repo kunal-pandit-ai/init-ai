@@ -1,0 +1,6 @@
+NAME = "Init-ai"
+VERSION = "0.1.0"
+AUTHOR = "Kunal Pandit"
+DESCRIPTION = "AI project bootstrap CLI"
+LICENSE = ""
+URL = ""
