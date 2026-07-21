@@ -16,6 +16,7 @@ from .commands.mv import mv
 from .commands.tree import tree
 from .commands.create import create
 from .commands.doctor import doctor
+from .commands.config import app as config_app
 
 app = typer.Typer()
 
@@ -35,4 +36,9 @@ app.command(help="Rename file names") (mv)
 app.command(help="Project map") (tree)
 app.command(help="Setup Project") (create)
 app.command(help="check Setup Project alright") (doctor)
+
+app.add_typer(
+    config_app,
+    name="config"
+)
 

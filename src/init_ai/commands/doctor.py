@@ -1,6 +1,5 @@
 from pathlib import Path
 
-
 def check(base: Path, name: str):
     path = base / name
 
