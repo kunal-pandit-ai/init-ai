@@ -41,4 +41,3 @@ app.add_typer(
     config_app,
     name="config"
 )
-
