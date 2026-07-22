@@ -45,7 +45,7 @@ requires-python = ">=3.10"
         subprocess.run([sys.executable, "-m", "venv", ".venv"], cwd=root)
 
         # ✅ initialize git properly (FIXED)
-        subprocess.run(["git", "init"], cwd=root)
+        subprocess.run(["git", "branch", "-m", "main"], cwd=root, check=True)
         subprocess.run(["git", "add", "."], cwd=root)
         subprocess.run(["git", "commit", "-m", "Initial commit"], cwd=root)
 
